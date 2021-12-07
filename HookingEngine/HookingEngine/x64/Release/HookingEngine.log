@@ -1,0 +1,7 @@
+﻿  dllmain.cpp
+  Generating code
+  Finished generating code
+  1 of 10 functions (10.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  HookingEngine.vcxproj -> C:\Users\user\Desktop\64APIHooking\HookingEngine\x64\Release\HookingEngine.dll
