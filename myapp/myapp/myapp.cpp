@@ -4,10 +4,30 @@
 #include <iostream>
 #include <Windows.h>
 
+void PrintBytes(char* pLocation) {
+    int i;
+    for (i = 0; i < 10; i++) {
+        unsigned char c = (pLocation)[i];
+        printf("%02x ", c);
+    }
+    printf("\n");
+}
+
+
 int main()
 {
-    Sleep(1000);
+    // Avoid race conditions
+    Sleep(2000);
     MessageBoxA(NULL, "test", "test", MB_OK);
+
+    if (((PBYTE)MessageBoxA)[0] == 0xE9) {
+        printf("[+] MessageBoxA is being hooked!\n");
+        PrintBytes((char*)MessageBoxA);
+
+        MessageBoxExA(NULL, "test", "test", MB_OK, 0);
+    }
+
+    //getchar();
     //std::cout << "Hello World!\n";
 }
 

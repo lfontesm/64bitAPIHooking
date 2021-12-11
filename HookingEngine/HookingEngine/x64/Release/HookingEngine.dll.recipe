@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\user\Desktop\64APIHooking\HookingEngine\x64\Release\HookingEngine.dll</FullPath>
+      <FullPath>C:\Users\user\Desktop\64bitAPIHooking\HookingEngine\x64\Release\HookingEngine.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

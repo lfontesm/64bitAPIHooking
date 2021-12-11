@@ -140,7 +140,7 @@ BOOL createTrampoline(LPVOID target, LPVOID detour, LPVOID trampoline, LPVOID* o
     DWORD trampolineLength = 0, originalProtection;
 
     hde64s disasm;
-    printf("aa %d\n", sizeof(JMP_REL));
+    //printf("aa %d\n", sizeof(JMP_REL));
     while (trampolineLength < sizeof(JMP_REL)) {
         LPVOID instructionPointer = (LPVOID)((DWORD64)target + trampolineLength);
         trampolineLength += hde64_disasm(instructionPointer, &disasm);

@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="myapp.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lazy_importer.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
